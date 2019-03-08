@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div class="app-c">
+    </div>
+ 
+
+</div>
+<table class="tab">
+    <thead>
+      <tr>
+        <th>Fname</th>
+        <th>LName</th>
+        <th>ID</th>
+        <th>Email-ID</th>
+        <th>Phoneno</th>
+        <th>DOB</th>
+
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let info of data">
+        <td>{{ info.Fname }}</td>
+        <td>{{ info.Lname }}</td>
+        <td>{{ info.ID }}</td>
+        <td>{{ info.EmailID }}</td>
+        <td>{{ info.phone}}</td>
+        <td>{{ info.DOB}}</td>
+        
+
+       
+      </tr>
+    </tbody>
+  </table>
+<hr>
+
+<app-add-button></app-add-button>
+
